@@ -13,7 +13,7 @@ import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.dubbo.rpc.RpcException;
 import com.alibaba.dubbo.rpc.RpcResult;
 import com.alibaba.fastjson.JSON;
-import com.facishare.dubbo.restful.constants.RestfulConstants;
+import open.dubbo.restful.plugin.constant.RestfulConstants;
 
 /**
  * created by huangy on 2019年4月9日

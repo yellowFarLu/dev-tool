@@ -10,22 +10,20 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import open.dubbo.restful.plugin.constant.RestfulConstants;
+import open.dubbo.restful.plugin.exception.NotFoundServiceException;
+import open.dubbo.restful.plugin.expert.mapping.MethodHandler;
+import open.dubbo.restful.plugin.expert.mapping.RequestEntity;
+import open.dubbo.restful.plugin.expert.mapping.ServiceHandler;
+import open.dubbo.restful.plugin.expert.mapping.ServiceMappingContainer;
+import open.dubbo.restful.plugin.util.ClassUtils;
+import open.dubbo.restful.plugin.util.GsonUtil;
 import org.apache.commons.lang3.StringUtils;
 
 import com.alibaba.dubbo.remoting.http.HttpHandler;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.facishare.dubbo.restful.constants.RestfulConstants;
-import com.facishare.dubbo.restful.exception.NotFoundServiceException;
-import com.facishare.dubbo.restful.export.mapping.MethodHandler;
-import com.facishare.dubbo.restful.export.mapping.RequestEntity;
-import com.facishare.dubbo.restful.export.mapping.ServiceHandler;
-import com.facishare.dubbo.restful.export.mapping.ServiceMappingContainer;
-import com.facishare.dubbo.restful.util.ClassUtils;
-import com.facishare.dubbo.restful.util.GsonUtil;
-import com.github.trace.TraceContext;
-import com.google.gson.Gson;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -102,9 +100,7 @@ public class RestfulHandler implements HttpHandler {
     }
 
     private void fillTraceId(HttpServletRequest request) {
-        TraceContext traceContext = TraceContext.get();
-        String requestTraceId = request.getHeader("x-fs-trace-id");
-        traceContext.setTraceId(requestTraceId);
+        // 设置traceId
     }
 
     private void setRemoteAddress(HttpServletRequest request) {

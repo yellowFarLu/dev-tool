@@ -10,12 +10,12 @@ import com.alibaba.dubbo.remoting.http.HttpServer;
 import com.alibaba.dubbo.rpc.Invoker;
 import com.alibaba.dubbo.rpc.RpcException;
 import com.alibaba.dubbo.rpc.protocol.AbstractProxyProtocol;
-import com.facishare.dubbo.restful.client.RestfulInvoker;
-import com.facishare.dubbo.restful.constants.RestfulConstants;
-import com.facishare.dubbo.restful.export.RestfulHandler;
-import com.facishare.dubbo.restful.export.mapping.ServiceMappingContainer;
 
 import lombok.extern.slf4j.Slf4j;
+import open.dubbo.restful.plugin.client.RestfulInvoker;
+import open.dubbo.restful.plugin.constant.RestfulConstants;
+import open.dubbo.restful.plugin.expert.RestfulHandler;
+import open.dubbo.restful.plugin.expert.mapping.ServiceMappingContainer;
 
 /**
  * created by huangy on 2019年4月9日

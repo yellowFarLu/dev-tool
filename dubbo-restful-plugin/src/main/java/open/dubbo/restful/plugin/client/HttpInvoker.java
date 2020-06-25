@@ -1,8 +1,8 @@
 package open.dubbo.restful.plugin.client;
 
 import com.alibaba.dubbo.rpc.RpcException;
-import com.facishare.dubbo.restful.constants.RestfulConstants;
 
+import open.dubbo.restful.plugin.constant.RestfulConstants;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;

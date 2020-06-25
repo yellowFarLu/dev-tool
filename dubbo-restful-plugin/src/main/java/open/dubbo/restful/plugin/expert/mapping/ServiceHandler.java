@@ -1,9 +1,9 @@
 package open.dubbo.restful.plugin.expert.mapping;
 
 import com.alibaba.dubbo.common.Constants;
-import com.facishare.dubbo.restful.annotation.RestPath;
-import com.facishare.dubbo.restful.exception.NotFoundServiceException;
 import lombok.extern.slf4j.Slf4j;
+import open.dubbo.restful.plugin.annotation.RestPath;
+import open.dubbo.restful.plugin.exception.NotFoundServiceException;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

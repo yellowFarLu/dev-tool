@@ -5,15 +5,15 @@ import java.io.OutputStream;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.apache.commons.lang.StringUtils;
 
 import com.alibaba.dubbo.common.Constants;
 import com.alibaba.dubbo.common.URL;
-import com.facishare.dubbo.restful.constants.RestfulConstants;
-import com.facishare.dubbo.restful.exception.NotFoundServiceException;
-import com.facishare.dubbo.restful.util.ServicesUtil;
 
 import lombok.extern.slf4j.Slf4j;
+import open.dubbo.restful.plugin.constant.RestfulConstants;
+import open.dubbo.restful.plugin.exception.NotFoundServiceException;
+import open.dubbo.restful.plugin.util.ServicesUtil;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * created by huangy on 2019年4月9日

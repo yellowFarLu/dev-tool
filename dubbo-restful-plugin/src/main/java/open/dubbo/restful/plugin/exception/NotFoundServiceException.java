@@ -1,6 +1,6 @@
 package open.dubbo.restful.plugin.exception;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * created by huangy on 2019年4月9日
